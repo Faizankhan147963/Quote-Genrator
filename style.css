@@ -1,0 +1,90 @@
+* {
+               margin: 0;
+               padding: 0;
+               box-sizing: border-box;
+               font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+               background-color: lightblue;
+}
+
+.quote_box {
+               background-color: white;
+               position: absolute;
+               left: 50%;
+               top: 50%;
+               transform: translate(-50%, -50%);
+               padding: 40px;
+               text-align: center;
+               border-radius: 10px;
+               box-shadow: 3px 4px 10px white;
+               width: 700px;
+}
+
+.quote_box h2 {
+               text-transform: uppercase;
+               text-decoration: underline 2px;
+               margin-bottom: 40px;
+               position: relative;
+}
+
+.quote_box h2::after {
+               content: '';
+               width: 75px;
+               height: 3px;
+               border-radius: 10px;
+               background-color: blue;
+               position: absolute;
+               bottom: -10px;
+               left: 50%;
+               transform: translateX(-50%);
+}
+.quote_box blockquote{
+               font-size: 26px;
+               min-height: 110px;
+               font-weight: bold;
+}
+.quote_box blockquote::before ,.quote_box blockquote::after{
+               content: '"';
+}
+.quote_box span{
+               display: block;
+               margin-top: 10px;
+               float: right;
+               position: relative;
+
+               font-weight: bold;
+}
+.quote_box span::before{
+               content:"";
+               width: 40px;
+               height: 2px;
+               background-color: black;
+               position: absolute;
+               top: 50%;
+               left: -50%;
+
+}
+.quote_box div{
+               width: 100%;
+               margin-top: 50px;
+               display: flex;
+               justify-content: center;
+
+}
+.quote_box div button{
+               padding: 10px;
+               background-color: lightblue;
+               font-weight: bold;
+               border: none;
+               outline: none;
+               cursor: pointer;
+               display: flex;
+               align-items: center;
+               margin: 10px;
+               background-color: blueviolet;
+               border-radius: 10%;
+               color: white;
+               justify-content: center;
+}
